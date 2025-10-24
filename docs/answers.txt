@@ -1,0 +1,116 @@
+Git Lab Tutorial Dates:
+Main – Introduction Sequence 10/24/2025
+Remotes – Push & Pull -- Git Remote 10/24/2025
+
+GitHub Account Date:
+~10/07/2025
+
+1.
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 802 bytes | 802.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/jessicalouisej-hub/assignment2.git
+   f4975e5..7d675c7  master -> master
+
+2.
+There are 9 commits found using "git log".
+$ git log
+commit b80423ab8978838e957cf239e4820fd5247c40fe (HEAD -> master, origin/master, origin/HEAD)
+Author: jessicalouisej-hub <jessicalouisej21@gmail.com>
+Date:   Fri Oct 24 14:43:26 2025 -0400
+
+    =answers.txt added to docs folder
+
+commit 7d675c719abe664182286dff864824f0ef8962f3
+Author: jessicalouisej-hub <jessicalouisej21@gmail.com>
+Date:   Fri Oct 24 14:39:03 2025 -0400
+
+    =Created directory 'docs' and added status output
+
+commit a8e2f357da9b9d74e00cc7f36a6cf1e34dee66b8
+Author: jessicalouisej-hub <jessicalouisej21@gmail.com>
+Date:   Fri Oct 24 14:35:06 2025 -0400
+
+    =Updated information in README.md
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+commit e424a923e80da4772ca789591ef3326230062a71
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    -> Tracking .gitignore
+
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+
+commit 4f6c88c953f4601929df7980a19dcdaee4f13854
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 14:59:19 2019 -0400
+
+    Base Vehicle class created
+
+3.
+$ git log -1 README.md
+commit a8e2f357da9b9d74e00cc7f36a6cf1e34dee66b8
+Author: jessicalouisej-hub <jessicalouisej21@gmail.com>
+Date:   Fri Oct 24 14:35:06 2025 -0400
+
+    =Updated information in README.md
+
+4.
+Branches are used to point to specific commits, by using branches developers can work on the code in parallel and in isolation from the main codebase. Branches also make provide version control allowing developers to track changes overtime in a safe environment without risking the main codebase.
+
+5.
+git status displays the state of the current branch, the changes not staged for commit, and untracked files. While git log displays the commit history of the current branch.
+
+6.
+$ git log Vehicle.h
+
+7.
+$ git log --grep="file"
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+8.
+I) Inheritance is the ability of one class to be derived from another. Where the "child" class inherits the "parent" class's properties and methods/functions.
+II) Polymorphism is the ability of objects to take many forms/types so that a single interface can represent differing underlying forms/types which can be treated uniformly.
+III) Encapsulation is the concept that groups attributes and methods/functions that operate on those attributes into a single unit, such as a class.
+
+9.
+"Dictator and Lieutenants" (D.L.) workflow have a central repository that everyone pulls from but only the dictator can push to the central repository. "Integration manager" (I.M.) workflow has each developer push to their own public repository and the integration manager handles the central repository.
+
+10.
+Because the "Centralized" workflow as all the developers pushing and pulling fromt the same shared repository integration conflicts and miscommunications are highly likely due to the number of developers on the team D.L. workflow allows only one developer to push to the repository thus allowing them to handle the integration of all the others' work without creating conflicts in the central repository. The shared repository would be updated so frequently that it would be nearly impossible to have an up-to-date private repository or ensure that pushes would not conflict.
